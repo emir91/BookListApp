@@ -28,7 +28,7 @@ class UI {
         books.forEach((book) => UI.addBookToList(book));
     }
 
-    addBookToList(book){
+    static addBookToList(book){
         const list = document.querySelector('#book-list');
 
         const row = document.createElement('tr');
@@ -44,7 +44,8 @@ class UI {
 
 // Store Class: Handles Storage
 
-// Event: Display
+// Event: Display Books
+document.addEventListener('DOMContentLoaded', UI.displayBooks);
 
 // Event: Add a Book
 
