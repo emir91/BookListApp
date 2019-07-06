@@ -70,6 +70,8 @@ document.querySelector('#book-form').addEventListener('submit', (e) =>
    // Add book to UI
    UI.addBookToList(book);
 
+   // Clear form fields
+   UI.clearFields();
 })
 
 // Event: Remove a Book
