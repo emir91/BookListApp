@@ -104,4 +104,7 @@ document.querySelector('#book-form').addEventListener('submit', (e) =>
 // Event: Remove a Book
 document.querySelector('#book-list').addEventListener('click', (e) => {
     UI.deleteBooks(e.target);
+
+    // Show message when book is deleted
+    UI.showAlert('Book has been deleted', 'info');
 });
