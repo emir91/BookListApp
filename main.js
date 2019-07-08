@@ -68,6 +68,19 @@ class UI {
 }
 
 // Store Class: Handles Storage
+class Store {
+    static getBooks() {
+
+    }
+
+    static addBook(book) {
+
+    }
+
+    static removeBooks(isbn) {
+        
+    }
+}
 
 // Event: Display Books
 document.addEventListener('DOMContentLoaded', UI.displayBooks);
