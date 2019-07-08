@@ -70,7 +70,13 @@ class UI {
 // Store Class: Handles Storage
 class Store {
     static getBooks() {
-
+      let books;
+      if(localStorage.getItem('books') === null){
+          books = [];
+      } else {
+          books = JSON.parse(localStorage.getItem('book'));
+      }
+      return books;
     }
 
     static addBook(book) {
@@ -78,7 +84,7 @@ class Store {
     }
 
     static removeBooks(isbn) {
-        
+
     }
 }
 
