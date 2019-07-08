@@ -10,9 +10,7 @@ class Books {
 // UI Class: Handle UI Task
 class UI {
     static displayBooks() {
-        
-
-        const books = StoredBooks;
+        const books = Store.getBooks();
         books.forEach((book) => UI.addBookToList(book));
     }
 
@@ -108,6 +106,9 @@ document.querySelector('#book-form').addEventListener('submit', (e) =>
 
    // Add book to UI
      UI.addBookToList(book);
+
+   // Add book to store
+     Store.addBook(book);
 
   // Show success message 
   UI.showAlert('Book was succesfully added', 'success');
